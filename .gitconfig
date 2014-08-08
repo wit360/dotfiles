@@ -1,0 +1,9 @@
+[user]
+	name = wit_t
+	email = wit_t@yahoo.com
+[color]
+	ui = true
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
