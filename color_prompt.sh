@@ -39,7 +39,7 @@ Cdir='\e[38;5;214m'      # orange
 
 PS1="[$Cuser\u$Coff"                 # user
 PS1="$PS1@$Chost\h$Coff"             # at host
-if [ "x$YROOT_NAME" != "x" ]; then
+#if [ "x$YROOT_NAME" != "x" ]; then
   PS1="$PS1$Croot($YROOT_NAME)$Coff" # yroot
-fi
+#fi
 PS1="$PS1] $UWhite\W$Coff$ "         # working dir
