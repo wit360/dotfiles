@@ -1,7 +1,7 @@
 " color stuffs
 syntax on
 set t_Co=256
-color pychimp
+color molokai
 set ignorecase
 set tags=./tags;
 set ruler
