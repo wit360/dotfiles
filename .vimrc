@@ -43,3 +43,5 @@ endif
 
 
 au BufRead,BufNewFile *.ros set filetype=php
+au BufRead,BufNewFile *.json set filetype=json
+au! Syntax json source ~/.vim/ftplugin/json.vim
