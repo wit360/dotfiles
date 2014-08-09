@@ -1,5 +1,5 @@
 # Reset
-Coff='\e[0m'       # Text Reset
+Coff='\[\e[0m\]'       # Text Reset
 
 # Regular Colors
 Black='\e[0;30m'        # Black
@@ -32,14 +32,16 @@ UCyan='\e[4;36m'        # Cyan
 UWhite='\e[4;97m'       # White
 
 # http://misc.flogisoft.com/bash/tip_colors_and_formatting#terminals_compatibility
-Cuser='\e[38;5;118m'     # green 148
-Chost='\e[38;5;199m'     # purple 111
-Croot='\e[38;5;214m'     # orange
-Cdir='\e[38;5;75m'      # pink
+Cuser='\[\e[38;5;118m\]'     # green 148
+Chost='\[\e[38;5;199m\]'     # purple 111
+Croot='\[\e[38;5;214m\]'     # orange
+Cdir='\[\e[38;5;75m\]'      # pink
 
-PS1="[$Cuser\u$Coff"                 # user
-PS1="$PS1@$Chost\h$Coff"             # at host
-#if [ "x$YROOT_NAME" != "x" ]; then
-  PS1="$PS1$Croot($YROOT_NAME)$Coff" # yroot
-#fi
-PS1="$PS1] $Cdir\W$Coff$ "         # working dir
+if [ "x$YROOT_NAME" != "x" ]; then
+  YROOT_NAME=""
+fi
+
+PS1="[$Cuser\u$Coff"                # [user
+PS1="$PS1@$Chost\h$Coff"            # @host
+PS1="$PS1$Croot($YROOT_NAME)$Coff]" # (yroot)]
+PS1="$PS1 $Cdir\W$Coff$ "           # working dir
