@@ -15,7 +15,7 @@ set smarttab
 set autoindent
 set expandtab
 set smartindent
-set cindent
+set nocindent
 
 filetype on
 set hidden
