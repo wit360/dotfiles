@@ -37,7 +37,7 @@ Chost='\[\e[38;5;199m\]'     # purple 111
 Croot='\[\e[38;5;214m\]'     # orange
 Cdir='\[\e[38;5;75m\]'      # pink
 
-if [ "x$YROOT_NAME" != "x" ]; then
+if [ "x$YROOT_NAME" == "x" ]; then
   YROOT_NAME=""
 fi
 
