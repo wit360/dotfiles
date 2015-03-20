@@ -45,3 +45,5 @@ PS1="[$Cuser\u$Coff"                # [user
 PS1="$PS1@$Chost\h$Coff"            # @host
 PS1="$PS1$Croot($YROOT_NAME)$Coff]" # (yroot)]
 PS1="$PS1 $Cdir\W$Coff$ "           # working dir
+
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
