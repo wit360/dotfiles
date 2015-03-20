@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/wit/.vim'
 let g:netrw_dirhist_2='/home/wit/auction_fraud_detection/gbdt_model'
 let g:netrw_dirhist_3='/home/wit/auction_fraud_detection/evaluation/live_raw'
 let g:netrw_dirhist_4='/home/wit/auction_fraud_detection/evaluation'
 let g:netrw_dirhist_5='/home/wit/auction_fraud_detection/rule_classifier'
+let g:netrw_dirhist_6='/Users/wit_t/shell-dotfiles/.git'
+let g:netrw_dirhist_7='/Users/wit_t/shell-dotfiles/.vim/bundle/Vundle.vim'
+let g:netrw_dirhist_8='/Users/wit_t/shell-dotfiles/.vim/bundle'
+let g:netrw_dirhist_9='/Users/wit_t/shell-dotfiles/.vim'

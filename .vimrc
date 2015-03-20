@@ -1,33 +1,38 @@
-"set nocompatible              " be iMproved, required
-"filetype off                  " required
+" Vundle Start
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-"Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'davidhalter/jedi-vim'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
+
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
-"Plugin 'Valloric/YouCompleteMe'
-" Plugin 'davidhalter/jedi-vim'
 
 
 " All of your Plugins must be added before the following line
-"call vundle#end()            " required
-"filetype plugin indent on    " required
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Vundle End
 
-" color stuffs
+
+" color and spacing stuffs
 syntax on
 set t_Co=256
 color molokai
@@ -37,9 +42,9 @@ set ruler
 set nowrap
 
 " tab spaces and indent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set smarttab
 set autoindent
 set expandtab
