@@ -40,6 +40,7 @@ set ignorecase
 set tags=./tags;~/auction_fraud_detection
 set ruler
 set nowrap
+set mouse=a
 
 " tab spaces and indent
 set tabstop=2
