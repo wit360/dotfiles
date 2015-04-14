@@ -47,3 +47,4 @@ PS1="$PS1$Croot($YROOT_NAME)$Coff]" # (yroot)]
 PS1="$PS1 $Cdir\W$Coff$ "           # working dir
 
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+set -o vi
