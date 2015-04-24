@@ -35,6 +35,7 @@ filetype plugin indent on    " required
 " color and spacing stuffs
 syntax on
 set t_Co=256
+set synmaxcol=120
 color molokai
 set ignorecase
 set tags=./tags;~/auction_fraud_detection
