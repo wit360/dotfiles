@@ -15,9 +15,12 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 
 " plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+" Plugin 'Valloric/YouCompleteMe' require Vim7.3
 " Plugin 'davidhalter/jedi-vim'
+Plugin 'bling/vim-airline'
+Plugin 'easymotion/vim-easymotion'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -38,7 +41,7 @@ set t_Co=256
 set synmaxcol=120
 color molokai
 set ignorecase
-set tags=./tags;~/auction_fraud_detection
+set tags=./tags
 set ruler
 set nowrap
 set mouse=a
@@ -60,7 +63,7 @@ set hidden
 set noswapfile
 
 noremap <C-j> :bprev<CR>
-noremap <C-k> :bnext<CR> 
+noremap <C-k> :bnext<CR>
 
 if has("gui_macvim")
   " Switch to specific tab numbers with Command-number
@@ -77,6 +80,29 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
+set laststatus=2
+" let g:airline#extensions#tabline#enabled=1
+let g:airline_section_y = ''
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols
+
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
 
 au BufRead,BufNewFile *.ros set filetype=php
 au BufRead,BufNewFile *.json set filetype=json

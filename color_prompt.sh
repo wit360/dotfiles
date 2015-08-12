@@ -35,16 +35,19 @@ UWhite='\e[4;97m'       # White
 Cuser='\[\e[38;5;118m\]'     # green 148
 Chost='\[\e[38;5;199m\]'     # purple 111
 Croot='\[\e[38;5;214m\]'     # orange
-Cdir='\[\e[38;5;75m\]'      # pink
+Cdir='\[\e[38;5;75m\]'       # pink
+Cbranch='\[\e[38;5;244m\]'   # gray
 
 if [ "x$YROOT_NAME" == "x" ]; then
   YROOT_NAME=""
 fi
 
+source ~/dotfiles/.git-prompt.sh
+
 PS1="[$Cuser\u$Coff"                # [user
 PS1="$PS1@$Chost\h$Coff"            # @host
 PS1="$PS1$Croot($YROOT_NAME)$Coff]" # (yroot)]
-PS1="$PS1 $Cdir\W$Coff$ "           # working dir
+PS1="$PS1 $Cdir\W$Coff$Cbranch\$(__git_ps1)$Coff$ "           # working dir
 
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 set -o vi
