@@ -23,6 +23,7 @@ Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'bling/vim-bufferline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'flazz/vim-colorschemes'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -38,7 +39,7 @@ filetype plugin indent on    " required
 
 
 " color and spacing stuffs
-color bubblegum-256-dark
+color molokai
 syntax on
 set t_Co=256
 "set synmaxcol=120
