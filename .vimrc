@@ -86,6 +86,7 @@ endif
 
 set laststatus=2
 " let g:airline#extensions#tabline#enabled=1
+" let g:airline_theme='bubblegum'
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 
@@ -114,3 +115,11 @@ au BufRead,BufNewFile *.ros set filetype=php
 au BufRead,BufNewFile *.json set filetype=json
 au BufRead,BufNewFile *.pig set filetype=pig syntax=pig
 au BufRead,BufNewFile *.hive set filetype=hive syntax=hive
+
+" make Esc happen without waiting for timeoutlen
+" fixes Powerline delay
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+augroup END
