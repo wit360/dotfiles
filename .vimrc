@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'davidhalter/jedi-vim'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'bling/vim-bufferline'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -82,6 +83,7 @@ endif
 
 set laststatus=2
 " let g:airline#extensions#tabline#enabled=1
+let g:airline_section_x = ''
 let g:airline_section_y = ''
 
 if !exists('g:airline_symbols')
@@ -104,6 +106,7 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+let g:bufferline_echo = 0
 au BufRead,BufNewFile *.ros set filetype=php
 au BufRead,BufNewFile *.json set filetype=json
 au BufRead,BufNewFile *.pig set filetype=pig syntax=pig
