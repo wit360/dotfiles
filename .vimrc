@@ -39,7 +39,8 @@ filetype plugin indent on    " required
 
 
 " color and spacing stuffs
-color molokai
+set background=dark
+color Tomorrow-Night-Bright
 syntax on
 set t_Co=256
 "set synmaxcol=120
