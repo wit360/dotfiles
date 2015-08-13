@@ -22,6 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'bling/vim-bufferline'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
