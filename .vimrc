@@ -45,7 +45,7 @@ syntax on
 set t_Co=256
 "set synmaxcol=120
 set ignorecase
-set tags=./tags
+set tags=tags;
 set ruler
 set nowrap
 set mouse=a
