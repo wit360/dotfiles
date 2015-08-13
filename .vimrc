@@ -37,10 +37,10 @@ filetype plugin indent on    " required
 
 
 " color and spacing stuffs
+color bubblegum-256-dark
 syntax on
 set t_Co=256
-set synmaxcol=120
-color molokai
+"set synmaxcol=120
 set ignorecase
 set tags=./tags
 set ruler
