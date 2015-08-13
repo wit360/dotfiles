@@ -40,7 +40,7 @@ filetype plugin indent on    " required
 
 " color and spacing stuffs
 set background=dark
-color Tomorrow-Night-Bright
+color Tomorrow-Night
 syntax on
 set t_Co=256
 "set synmaxcol=120
