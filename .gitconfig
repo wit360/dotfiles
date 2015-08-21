@@ -9,6 +9,7 @@
   prompt = false
 [core]
   excludesfile = ~/.gitignore_global
+  editor = /usr/bin/vim
 
  # super git log graph http://stackoverflow.com/a/9074343
 [alias]

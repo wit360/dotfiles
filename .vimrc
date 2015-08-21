@@ -38,17 +38,30 @@ filetype plugin indent on    " required
 " Vundle End
 
 
-" color and spacing stuffs
+" color
 set background=dark
 color Tomorrow-Night
+
 syntax on
 set t_Co=256
-"set synmaxcol=120
 set ignorecase
 set tags=tags;
 set ruler
 set nowrap
 set mouse=a
+
+"toggle shortcuts
+nnoremap <SPACE> <Nop>
+nnoremap <tab>1 :colorscheme PaperColor<cr>
+nnoremap <tab>4 :colorscheme seoul256-light<cr>
+nnoremap <tab>7 :colorscheme seoul256<cr>
+nnoremap <tab>8 :colorscheme obsidian<cr>
+nnoremap <tab>9 :colorscheme Monokai<cr>
+nnoremap <tab>0 :colorscheme Tomorrow-Night<cr>
+nnoremap <tab>v :e ~/.vimrc<cr>
+nnoremap <tab>n :set number!<cr>
+nnoremap <tab>h :set hlsearch!<cr>
+nnoremap <tab>s :if exists("g:syntax_on")<Bar>syntax off<Bar>else<Bar>syntax enable<Bar>endif<cr>
 
 " tab spaces and indent
 set tabstop=2
@@ -68,6 +81,7 @@ set noswapfile
 
 noremap <C-j> :bprev<CR>
 noremap <C-k> :bnext<CR>
+let mapleader = "\<space>"
 
 if has("gui_macvim")
   " Switch to specific tab numbers with Command-number
