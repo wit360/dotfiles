@@ -24,6 +24,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'bling/vim-bufferline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/ctrlp.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -43,25 +44,29 @@ set background=dark
 color Tomorrow-Night
 
 syntax on
-set t_Co=256
 set ignorecase
 set tags=tags;
 set ruler
 set nowrap
 set mouse=a
+set number
 
 "toggle shortcuts
 nnoremap <SPACE> <Nop>
-nnoremap <tab>1 :colorscheme PaperColor<cr>
-nnoremap <tab>4 :colorscheme seoul256-light<cr>
-nnoremap <tab>7 :colorscheme seoul256<cr>
-nnoremap <tab>8 :colorscheme obsidian<cr>
-nnoremap <tab>9 :colorscheme Monokai<cr>
-nnoremap <tab>0 :colorscheme Tomorrow-Night<cr>
+nnoremap <tab>1 :color PaperColor<cr>
+nnoremap <tab>4 :color seoul256-light<cr>
+nnoremap <tab>6 :color gruvbox<cr>
+nnoremap <tab>7 :color seoul256<cr>
+nnoremap <tab>8 :color obsidian<cr>
+nnoremap <tab>9 :color wombat256<cr>
+nnoremap <tab>0 :color Tomorrow-Night<cr>
 nnoremap <tab>v :e ~/.vimrc<cr>
+nnoremap <tab>V :so ~/.vimrc<cr>
 nnoremap <tab>n :set number!<cr>
+nnoremap <tab>N :NERDTree<cr>
 nnoremap <tab>h :set hlsearch!<cr>
 nnoremap <tab>s :if exists("g:syntax_on")<Bar>syntax off<Bar>else<Bar>syntax enable<Bar>endif<cr>
+nnoremap <tab>p :CtrlP
 
 " tab spaces and indent
 set tabstop=2
@@ -118,6 +123,7 @@ let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.linenr = '␊'
 let g:airline_symbols.linenr = '␤'
 let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.linenr = ' '
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
@@ -137,3 +143,4 @@ augroup FastEscape
   au InsertEnter * set timeoutlen=0
   au InsertLeave * set timeoutlen=1000
 augroup END
+set t_Co=256
