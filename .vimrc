@@ -66,7 +66,7 @@ nnoremap <tab>n :set number!<cr>
 nnoremap <tab>N :NERDTree<cr>
 nnoremap <tab>h :set hlsearch!<cr>
 nnoremap <tab>s :if exists("g:syntax_on")<Bar>syntax off<Bar>else<Bar>syntax enable<Bar>endif<cr>
-nnoremap <tab>p :CtrlP
+nnoremap <tab>p :CtrlP ~/
 
 " tab spaces and indent
 set tabstop=2

@@ -44,10 +44,11 @@ fi
 
 source ~/dotfiles/.git-prompt.sh
 
-PS1="[$Cuser\u$Coff"                # [user
-PS1="$PS1@$Chost\h$Coff"            # @host
-PS1="$PS1$Croot($YROOT_NAME)$Coff]" # (yroot)]
+PS1="[$Cuser\u$Coff"                 # [user
+PS1="$PS1@$Chost\h$Coff]"            # @host]
 PS1="$PS1 $Cdir\W$Coff$Cbranch\$(__git_ps1)$Coff$ "           # working dir
 
+
+# export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD - mac
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 set -o vi
